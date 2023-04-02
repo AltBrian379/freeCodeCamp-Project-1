@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang='eng'>
+  <head>
+    <meta charset='UTF-8'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <link href='styles.css' rel='stylesheet'/>
+    <title>Survey for freeCodeCamp</title>
+    
+  </head>
+  <body>
+    
+    <h1 id='title'>freeCodeCamp Survey Form</h1>
+    <p id='description'>Thank you for taking the time to help us improve the platform</p>
+  
+    <form id='survey-form'>
+      <label id='name-label' class='form-element'><p class'label-title'>Name</p>
+        <input id='name' type='text' placeholder='Enter your name'  required />
+      </label>
+      <label id='email-label' class='form-element'><p class='label-title'>Email</p> <!-- TODO: Question number 6-->
+        <input id='email' type='email' placeholder='Enter your Email' required />
+      </label>
+      <label id='number-label' class='form-element'><p class='label-title'>Age</p><p class='subtext'>(optional)</p>
+        <input id='number' type='number' min=13 max=120 placeholder='Age' />
+      </label>
+      <label class='form-element'> <p 'label-title'>Which option best describes your current role?</p>
+        <select id='dropdown'>
+          <option value=''>(select one)</option>
+          <option value='1'>Front End Developer</option>
+          <option value='2'>Back End Developer</option>
+        </select>
+      </label>
+    <section class='form-element'>
+      <p class='label-title'>Would you recommend freeCodCamp to a friend?</p>
+      <label for='definitely'>
+        <input id='definitely' type='radio' name='recommendation-type' class='inline' value='1'> Definitely
+      </label>
+      <label for='maybe'>
+        <input id='maybe' type='radio' name='recommendation-type' class='inline' value='2'> Maybe
+      </label>
+      <label for='not-sure'>
+        <input id='not-sure' type='radio' name='recommendation-type' class='inline' value='3'> Not Sure
+      </label>
+    </section>
+    <section id='checkboxes' class='form-element'>
+      <p>What would you like to see improved</p><p class='subtext'>(Check all that apply)</p>
+      <label for='front-end'>
+        <input name='improve-type' id='front-end' type='checkbox' value='1' /> Front-end Projects
+      </label>
+      <label for='back-end'>
+        <input name='improve-type' id='back-end' type='checkbox' value='2'/> Back-end Projects
+      </label>
+      <label for='data-visualization'>
+        <input name='improve-type' id='data-visualization' type='checkbox' value='3'/> Data-Visualization
+      </label>
+    </section>
+
+      <label for='comments' class='form-element'> <p class='label-title'>Any comments or suggestions? </p>
+        <textarea id='comments' placeholder='tell us more...' rows='6' columns='30'></textarea>
+      </label>
+      <input id='submit' type='submit' value='Submit'/>
+
+    </form>
+  
+  </body>
+</html>
